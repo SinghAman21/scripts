@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import json
 import smtplib
 from email.mime.multipart import MIMEMultipart
@@ -12,8 +11,8 @@ listOfEmailNotSend = "listOfEmailNotSend.txt"
 with open('', 'r') as file:
     data = json.load(file)
 
-email_user = 'gdgoncampus.vit@gmail.com'  
-email_password = 'wtmg vznd yzki hyeh'  #email pass or app pass
+email_user = 'your@gmail'  
+email_password = 'email code'  #email pass or app pass
 email_subject = 'Thank You for attending the Figma Workshop'
 
 # Gmail SMTP server configuration
@@ -120,4 +119,3 @@ for participant in data:
         print(f"Certificate file {certificate_filename} not found. Skipping {name}.")
         with open(listOfEmailNotSend, "a") as f:
             f.write(f"{certificate_filename} \t {name} Not Found \n")
->>>>>>> update
